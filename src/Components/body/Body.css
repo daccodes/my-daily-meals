@@ -1,0 +1,126 @@
+:root {
+  --desktop-header-font-size: 0.83em;
+  --desktop-line-height:2.6em;
+  --font-weight-bold:bold;
+  --mobile-header-font-size:0.5em;
+}
+#container{
+  width: 600px;
+  margin: 0px auto;
+  border: 0.5px solid grey;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: ghostwhite;
+  box-shadow: 0px 0px 15px 2px darkgrey;
+}
+.total-grid-header{
+  display: grid;
+  grid-template-columns: 220px 90px 90px 90px 90px;
+  justify-items: center;
+  font-size: 0.83em;
+  font-weight: var(--font-weight-bold);
+  line-height: var(--desktop-line-height);
+}
+.total-grid-body{
+  display: grid;
+  grid-template-columns: 220px 90px 90px 90px 90px;
+  justify-items: center;
+  font-size: 0.95em;
+  font-style: oblique;
+  font-weight: var(--font-weight-bold);
+  line-height: var(--desktop-line-height);
+}
+.grid-result{
+  display: grid;
+  grid-template-columns: 120px 140px 80px 80px 80px 80px;
+  justify-items: center;
+  font-size: var(--desktop-header-font-size);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--desktop-line-height);
+  margin-top: 1.5em;
+}
+.button-save {
+  margin: 1.6em auto;
+  padding: 0.5em 3em;
+  display: flex;
+  border-radius: 8pt;
+  border-style: double;
+}
+.local-header{
+  display: flex;
+  justify-content: space-between;
+}
+.local-header span{
+  font-size: larger;
+  font-weight: var(--font-weight-bold);
+}
+.local-header button{
+  padding: 6px 24px;
+  display: flex;
+  border-radius: 11px;
+  border-style: double;
+  font-size: small;
+}
+
+@media (max-width: 575.98px) {
+  #container{
+    display:block;
+    width: 90%;
+    margin: 0px auto;
+    border: 0.5px solid grey;
+    padding: 3%;
+  }
+  .total-table{
+    display: block;
+  }
+  .total-grid-header{
+    display: grid;
+    grid-template-columns: 40% 15% 15% 15% 15%;
+    justify-items: center;
+    font-size: 0.83em;
+    font-weight: var(--font-weight-bold);
+    line-height: var(--desktop-line-height);
+  }
+  .total-grid-body{
+    display: grid;
+    grid-template-columns: 40% 15% 15% 15% 15% ;  
+    justify-items: center;
+    font-size: small;
+  }
+  .grid-result {
+    display: grid;
+    grid-template-columns: 20% 24% 14% 14% 14% 14%;
+    justify-items: center;
+    font-size: 0.83em;
+    font-weight: 600;
+    font-style: oblique;
+    margin: 1em auto;
+  }
+  .button-save {
+    margin: 1.4em auto;
+    padding: 3px 32px;
+    display: flex;
+    border-radius: 11px;
+    border-style: double;
+    font-size: small;
+    font-weight: bold;
+  }
+  .local-header{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: medium;
+    margin: 1.4em auto;
+  }
+  .local-header span{
+    font-size: larger;
+  }
+  .local-header button{
+    padding: 3px 32px;
+    display: flex;
+    border-radius: 11px;
+    border-style: double;
+    font-size: small;
+    font-weight: bold;
+  }
+}

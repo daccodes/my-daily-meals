@@ -1,0 +1,95 @@
+input[type="text"] {
+    border-style: none;
+    border-bottom: dashed 0.5px;
+    background-color: aliceblue;
+    font-size: larger;
+    padding: 6px;
+    margin-bottom: 15px;
+  }
+  .modal {
+    display: block;
+    width: 600px;
+    max-width: 100%;
+    height: 780px;
+    max-height: 100%;
+    position: fixed;
+    z-index: 100;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9);
+  }
+  .modal-table{
+    display: block;
+  }
+  .table-header{
+    display: grid;
+    grid-template-columns: 40% 15% 15% 15% 15%;
+    text-align: center;
+    font-size: medium;
+    font-weight: 700;
+    font-style: oblique;
+    line-height: 2em;
+    margin-bottom: 1em;
+  }
+  .table-body{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 40% 15% 15% 15% 15%;
+    font-size: medium;
+  }
+  .modal-guts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 20px 50px 20px 8px;
+  }
+  .modal-header{
+    display: flex;
+    justify-content: space-between;
+    width: 96%;
+  }
+  .button-closemodal{
+    font-size: larger;
+    padding: calc(12px*0.5625) 12px;
+    border-radius: 40%;
+    border-style: ridge;
+  }
+  .modal-overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+  }
+  .closed {
+    display: none;
+  }
+  .violet:hover{
+    background-color: #6666ff;
+    color: white;
+    border-radius: 15px;
+  }
+  .light-blue:hover{
+    background-color: #3399ff;
+    color: white;
+    border-radius: 15px;
+  }
+
+  @media (max-width: 575.98px) {
+    .table-header{
+      display: grid;
+      grid-template-columns: 40% 15% 15% 15% 15%;
+      font-size: small;
+      margin:1.2em 0em;
+    }
+    .table-body{
+      display: grid;
+      grid-template-columns: 40% 15% 15% 15% 15%;
+      font-size: small;
+    }
+  }
