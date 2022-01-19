@@ -22,6 +22,9 @@ Per la realizzazione è stata utilizzata un API esterna concessa dal sito: https
 
 Per l'utilizzo online si consigliano i seguenti passaggi:
 
+* Andare sul sito di edamam.com e registrarsi per ottenere le credenziali.
+
+* Creare nella root del progetto il file .env con le chiavi "REACT_APP_APP_ID" e "REACT_APP_APP_KEY".
 
 * Scaricare il progetto ed aprirlo nel proprio editor preferito
 
