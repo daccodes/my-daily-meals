@@ -19,10 +19,12 @@ const Modal=({closemodal, meal, numrow, setnumrow})=>{
         setActive(!isActive); 
     };
 
+    const {REACT_APP_APP_ID, REACT_APP_APP_KEY}=process.env;
+
     const cerca=(word)=>{
         if(word!==""){
             setplaceh("");
-            axios.get('https://api.edamam.com/api/food-database/v2/parser?app_id=e9e36c98&app_key=95c6b04ad51e9161f340224f476e226b&ingr='+word+'&nutrition-type=cooking')
+            axios.get(`https://api.edamam.com/api/food-database/v2/parser?app_id=${REACT_APP_APP_ID}&app_key=${REACT_APP_APP_KEY}&ingr=${word}&nutrition-type=cooking`)
             .then(res => {
                 setfoods(res.data);
                 setIsLoading(false);
