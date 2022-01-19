@@ -5,9 +5,7 @@ import './Modal.css'
 
 const Modal=({closemodal, meal, numrow, setnumrow})=>{
 
-    const {state, setState}=useContext(FoodsContext);
-    //const {foods, setfoods} = state.Foods;
-    
+    const {state, setState}=useContext(FoodsContext);    
     const [word, setword]=useState('');
     const [foods, setfoods]=useState([]);
     const [isempty, setisempty]=useState(true);

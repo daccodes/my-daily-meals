@@ -35,7 +35,7 @@ const Body =()=>{
     }
 
     useEffect(() => {
-        //everytime the currentDeletion's value isn't empty, if user has clicked a meal row, that meal will be removed by Food's state.
+        //everytime currentDeletion's value isn't empty, if user has clicked a meal row, that meal will be removed by Food's state.
         if(state.currentDeletion=="") return
         let a=state.Foods;
         for(var i=0;i<a.length;i++){
