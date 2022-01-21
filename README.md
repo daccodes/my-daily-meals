@@ -1,51 +1,54 @@
 # My Daily Meals
 
-## Di cosa si tratta: 
+## What it is:
  
-Un servizio web che consente all'utente di costruirsi la propria giornata alimentare tipo combinando i vari tipi di alimenti. Il suo scopo è quello di mostrare come è possibile prendere i dati da un'api esterna, manipolarli a proprio piacimento e salvarli in localstorage.
+A web service that allows the user to build his own typical food day by combining the various types of food. Its purpose is to show how it is possible to take data from an external API, manipulate it to your liking and save it in localstorage.
 
 
-## Utilizzo:
+## Usage:
 
-Quando uno dei pulsanti "+" viene premuto, viene aperta una finestra modale dalla quale sarà possibile cercare l'alimento desiderato ed una volta selezionato impostare la relativa quantità in grammi: sarà l'applicazione infatti, ad effettuare tutti i calcoli in maniera automatica. A tale proposito troviamo i calcoli automatici inerenti ai macronutrienti totali suddivisi per pasto e quelli globali dell'intera giornata.
-È possibile altresì eliminare gli alimenti inseriti cliccando sull'alimento inserito.
-Ogni qualvolta l'utente preme il Bottone "Submit Data", i dati vengono salvati in localstorage e mostrati nella tabella "history" indicando anche i pasti dai quali provengono gli alimenti inseriti. Inoltre se vengono aggiunti nuovi alimenti è possibile aggiungerli a quelli preesistenti nella stessa tabella: questi dati verranno aggiunti a seguire.
+When one of the "+" buttons is pressed, a modal window opens from which it will be possible to search for the desired food and, once selected, set the relative quantity in grams: the application will, in fact, carry out all the calculations automatically. 
+In particular, we find the automatic calculations relating to the total macronutrients divided by meal and the global ones for the whole day.
+It is also possible to delete the foods inserted by clicking on the inserted food.
+Whenever the user presses the "Submit Data" button, the data is saved in the localstorage and shown in the "history" table, also indicating the meals from which the foods entered come. Furthermore, if new foods are added, it is possible to add them to the pre-existing ones in the same table: these data will be added to follow.
 
 
-## Come è strutturato il progetto:
-Lo store dei dati principali del progetto è realizzato utilizzando le "context api" di react, non rendendo necessario di fatto l'utilizzo di un'ulteriore libreria Javascript per la gestione semplificata dello stato come Redux. Per quanto riguarda la parte di build e di deployment, il webserver viene gestito da netlify. 
 
-Per la realizzazione è stata utilizzata un API esterna concessa dal sito: https://api.edamam.com, tramite la quale è possibile effettuare le ricerche dei cibi nel loro database.
+## How the project is structured:
+The data store of the project is created using react "context api", making it unnecessary to use an additional Javascript library for simplified state management such as Redux. As for the build and deployment part, the webserver is managed by netlify.
+ 
+For the realization, an external API was used granted by the site: https://api.edamam.com , through which it is possible to search for foods in their database.
+
  
 
-## Come utilizzarlo offline:
+## How to use it offline:
 
-Per l'utilizzo online si consigliano i seguenti passaggi:
+For offline use we recommend the following steps:
 
-* Andare sul sito di edamam.com e registrarsi per ottenere le credenziali.
+* Go to the edamam.com website and register to get your personal credentials.
 
-* Creare nella root del progetto il file .env con le chiavi "REACT_APP_APP_ID" e "REACT_APP_APP_KEY".
+* Create the .env file with the keys "REACT_APP_APP_ID" and "REACT_APP_APP_KEY" in the root of the project relating to the data obtained by registering on edamam.
 
-* Scaricare il progetto ed aprirlo nel proprio editor preferito
+* Download the project and open it in your favorite editor
 
 
-* installare le dipendenze: 
+* install dependencies: 
   ```
   npm install
   ```
-* avviare la build: 
+* start the build: 
   ```
   npm run build
   ```
-* avviare il webserver in locale:
+* start the webserver locally:
   ```
   npm start
   ```
 
-Ecco che il progetto sarà visibile all'indirizzo:
+The project will be visible at the address:
 http://localhost:3000
 
-A seguire il link dove è possibile provare l'applicazione.
+To follow, the link where you can try the application.
 
 Happy Coding!
 
