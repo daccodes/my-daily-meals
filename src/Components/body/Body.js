@@ -81,7 +81,7 @@ const Body =()=>{
                 </div>
                 {item &&(
                     <div>
-                        <div className='grid-result'>
+                        <div className='grid-result-header'>
                             <td>Meal</td>
                             <td>Food</td>
                             <td>Fats</td>
@@ -90,7 +90,7 @@ const Body =()=>{
                             <td>KCals</td>
                         </div>
                         {item.map(({label, qta, fat, pro, cho, cal }, index)=>(
-                        <div className='grid-result' key={index}>
+                        <div className='grid-result-body' key={index}>
                             <td>{label[0]}</td>
                             <td>{label[1]+" ("+qta+"gr.)"}</td>
                             <td>{fat}</td>
