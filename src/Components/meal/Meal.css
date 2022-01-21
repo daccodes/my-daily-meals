@@ -19,6 +19,8 @@
   display: grid;
   grid-template-columns: 220px 90px 90px 90px 90px;
   justify-items: center;
+  line-height: 1.6em;
+  padding: 2em auto;
 }
 #fattot, #protot, #carbtot, #calstot{
   font-weight: bold;
