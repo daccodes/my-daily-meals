@@ -28,7 +28,6 @@ const Modal = ({ closemodal, meal, numrow, setnumrow }) => {
           `https://api.edamam.com/api/food-database/v2/parser?app_id=${REACT_APP_APP_ID}&app_key=${REACT_APP_APP_KEY}&ingr=${word}&nutrition-type=cooking`
         )
         .then((res) => {
-          console.log('x');
           setfoods(res.data);
           setIsLoading(false);
           setisempty(false);
@@ -68,7 +67,7 @@ const Modal = ({ closemodal, meal, numrow, setnumrow }) => {
     for (let i = 0; i <= 19; i++) {
       var item = document.getElementById(i.toString());
       if (item !== null) {
-        if (i % 2 == 0 || i === 0) {
+        if (i % 2 === 0 || i === 0) {
           item.classList.add('violet');
         } else {
           item.classList.add('light-blue');
@@ -79,11 +78,11 @@ const Modal = ({ closemodal, meal, numrow, setnumrow }) => {
   const calcolagrammi = (oldObj) => {
     let text;
     let qta = prompt('Enter amount in grams:', '');
-    if (qta == null || qta == '') {
+    if (qta === null || qta === '') {
       text = 'Your search is empty!';
       return text;
     } else {
-      if (isNaN(parseFloat(qta)) == true) {
+      if (isNaN(parseFloat(qta)) === true) {
         text = 'Error';
         return text;
       } else {
@@ -168,7 +167,7 @@ const Modal = ({ closemodal, meal, numrow, setnumrow }) => {
                     ).toFixed(1);
                     ToggleClass();
                     let normObj = calcolagrammi(ingrObj);
-                    if (isObject(normObj) == true) {
+                    if (isObject(normObj)) {
                       setState({
                         Foods: [
                           ...state.Foods,
